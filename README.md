@@ -30,5 +30,15 @@ npm run test:e2e
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Spec (개발 환경 스펙)
+- ES6 ~
+- axios
+- typescript
+- vue
+- vuex
+- vuex-class
+- vue-property-decorator
+- node-sass
+- eslint + Prettier
+- cypress
+- chai
