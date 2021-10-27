@@ -1,0 +1,59 @@
+/**
+ * @summary Layout css
+ * @description 기본 레이아웃 관련
+ */
+
+body,
+#root,
+#app,
+.app-wrap { height: 100%; }
+.ant-layout {
+    min-height: 100%;
+}
+
+/* 레이아웃이 없을때 */
+.is-not-Layout {
+    padding: 0 !important;
+    #container {
+        margin: 0;
+        background-color: transparent;
+        .contents {
+            padding: 0;
+        }
+    }
+}
+/* // 레이아웃이 없을때 */
+
+#container, #footer {
+    margin: 20px;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* 컨테이너 */
+#container {
+    h2 {
+        margin: 0 0 16px;
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
+/* // 컨테이너 */
+
+/* 푸터 */
+#footer {
+    margin: 0 20px;
+}
+/* // 푸터 */
+
+/* 헤더 */
+#header {
+}
+
+
+/* // 헤더 */
+
+/* // 사이드 메뉴 */
+.contents {
+    padding: 20px;
+}

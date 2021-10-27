@@ -1,7 +1,7 @@
 <template>
   <div class="count-component">
     {{ number }}
-    <button @click="click">test</button>
+    <button class="success-button" @click="click">count</button>
   </div>
 </template>
 

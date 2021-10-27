@@ -10,7 +10,7 @@ module.exports = {
     ecmaVersion: 2020,
     parser: '@typescript-eslint/parser'
   },
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier'],
   rules: {
     semi: ['error', 'always'],
     'space-before-function-paren': [
