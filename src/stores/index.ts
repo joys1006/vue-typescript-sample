@@ -1,9 +1,10 @@
 import Vue from 'vue';
-import { RootState } from '@/types/common/common';
-import Vuex, {Plugin, StoreOptions} from 'vuex';
+import { Dictionary, RootState } from '@/types/common/common';
+import Vuex, { StoreOptions } from 'vuex';
 import createLogger from 'vuex/dist/logger';
 // Modules
 import HomeStoreModule from '@/stores/modules/home';
+import TemplateStoreModule from '@/stores/modules/template';
 
 Vue.use(Vuex);
 
@@ -16,7 +17,7 @@ const logger = createLogger({
     // 변이는 { type, payload }의 포맷입니다.
     return mutation.type !== 'aBlacklistedMutation';
   },
-  transformer(state: any) {
+  transformer(state: Dictionary<RootState>) {
     // 로깅하기전 상태를 변이 하십시오.
     // 예를 들어 특정 하위 트리만 반환합니다.
     return state.subTree;
@@ -34,7 +35,8 @@ const store: StoreOptions<RootState> = {
     version: '1.0.0' // a simple property
   },
   modules: {
-    HomeStoreModule
+    HomeStoreModule,
+    TemplateStoreModule
   }
 };
 

@@ -17,11 +17,11 @@ export default class Test extends Vue {
       return false;
     }
   })
-  childrenDateEvent!: void;
+  protected readonly childrenDateEvent!: void;
 
   protected number = 1;
 
-  private click() {
+  private click(): void {
     this.number += 1;
     this.$emit('childrenDateEvent', this.number);
   }

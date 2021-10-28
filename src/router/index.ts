@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../pages/Home/Home.vue';
+import AppHeader from '../common/AppHeader/AppHeader.vue';
+import AppAside from '../common/AppAside/AppAside.vue';
+import AppFooter from '../common/AppFooter/AppFooter.vue';
 
 Vue.use(VueRouter);
 
@@ -8,7 +11,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    components: {
+      Header: AppHeader,
+      Aside: AppAside,
+      Contents: Home,
+      Footer: AppFooter
+    }
   },
   {
     path: '/about',

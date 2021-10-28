@@ -14,46 +14,57 @@ body,
 /* 레이아웃이 없을때 */
 .is-not-Layout {
     padding: 0 !important;
-    #container {
-        margin: 0;
-        background-color: transparent;
-        .contents {
-            padding: 0;
-        }
-    }
 }
 /* // 레이아웃이 없을때 */
 
 #container, #footer {
-    margin: 20px;
     padding: 0;
-    background-color: #fff;
 }
 
 /* 컨테이너 */
 #container {
+    min-height: 100%;
     h2 {
         margin: 0 0 16px;
         font-size: 36px;
         font-weight: 600;
     }
 }
+#content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
 /* // 컨테이너 */
 
 /* 푸터 */
-#footer {
+#Footer {
     margin: 0 20px;
+    text-align: center;
 }
 /* // 푸터 */
-
 /* 헤더 */
-#header {
+#Header .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 
 /* // 헤더 */
 
 /* // 사이드 메뉴 */
-.contents {
-    padding: 20px;
+#App {
+    min-height: 100%;
+    .logo {
+        height: 32px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 16px;
+    }
+}
+
+#App .trigger:hover {
+    color: #1890ff;
 }
