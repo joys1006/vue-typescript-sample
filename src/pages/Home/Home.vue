@@ -1,6 +1,6 @@
 <template>
   <div id="Home">
-    <test @childrenDateEvent="childrenDateEvent" />
+    <test @numberEventLisner="numberEventLisner" />
     <a-table
       :loading="tableOption.loading"
       :options="tableOption"

@@ -18,4 +18,4 @@
   </a-layout-sider>
 </template>
 
-<script lang="ts" src="./AppAside.ts" />
+<script lang="ts" src="@/components/Layout/AppAside/AppAside.ts" />

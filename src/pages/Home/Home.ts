@@ -1,4 +1,4 @@
-import Test from '../Test.vue';
+import Test from '@/components/Counter/Counter.vue';
 import { Component, Vue } from 'vue-property-decorator';
 import { TableListColumn, TableListOptions } from '@/types/ui/table';
 import { Action, Getter } from 'vuex-class';
@@ -95,7 +95,7 @@ export default class Home extends Vue {
     this.getInitData();
   }
 
-  public childrenDateEvent(children: number): void {
-    console.log(children);
+  public numberEventLisner(number: number): void {
+    console.log(number);
   }
 }

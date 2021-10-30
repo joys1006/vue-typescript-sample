@@ -4,4 +4,4 @@
   </a-layout-header>
 </template>
 
-<script lang="ts" src="./AppHeader.ts"></script>
+<script lang="ts" src="@/components/Layout/AppHeader/AppHeader.ts"></script>
