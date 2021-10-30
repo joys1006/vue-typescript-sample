@@ -1,4 +1,4 @@
-import { RootState, StoreModule } from '@/types/common/common';
+import { RootState, StoreModule } from '@/types/common';
 import HomeState from '@/stores/modules/home/states/HomeState';
 import HomeMutation from '@/stores/modules/home/mutations/HomeMutation';
 import HomeGetter from '@/stores/modules/home/getters/HomeGetter';

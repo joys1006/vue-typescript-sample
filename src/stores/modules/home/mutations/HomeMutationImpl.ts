@@ -1,4 +1,4 @@
-import { Modify } from '@/types/common/common';
+import { Modify } from '@/types/common';
 import HomeMutationInterface from '@/stores/modules/home/mutations/HomeMutationInterface';
 import HomeType from '@/stores/modules/home/types/HomeType';
 import MockListResponse from '@/types/mock/MockListResponse';

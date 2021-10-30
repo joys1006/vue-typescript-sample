@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { Dictionary, RootState } from '@/types/common/common';
+import { Dictionary, RootState } from '@/types/common';
 import Vuex, { StoreOptions } from 'vuex';
 import createLogger from 'vuex/dist/logger';
 // Modules

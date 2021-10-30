@@ -1,4 +1,4 @@
-import { RootState, StoreModule } from '@/types/common/common';
+import { RootState, StoreModule } from '@/types/common';
 import TemplateState from '@/stores/modules/template/states/TemplateState';
 import TemplateMutation from '@/stores/modules/template/mutations/TemplateMutation';
 import TemplateGetter from '@/stores/modules/template/getters/TemplateGetter';

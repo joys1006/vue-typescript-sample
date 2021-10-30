@@ -1,4 +1,4 @@
-import { Dictionary } from '@/types/common/common';
+import { Dictionary } from '@/types/common';
 import { ColumnFilterItem } from 'ant-design-vue/types/table/column';
 
 type itemRender = (page: number, type: string, originalElement: Element) => Function;

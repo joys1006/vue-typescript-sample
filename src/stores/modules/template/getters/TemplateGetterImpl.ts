@@ -1,4 +1,4 @@
-import { Modify } from '@/types/common/common';
+import { Modify } from '@/types/common';
 import TemplateType from '@/stores/modules/template/types/TemplateType';
 import TemplateState from '@/stores/modules/template/states/TemplateState';
 import TemplateGetterInterface from '@/stores/modules/template/getters/TemplateGetterInterface';

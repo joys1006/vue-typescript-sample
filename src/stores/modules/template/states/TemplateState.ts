@@ -1,4 +1,4 @@
-import { RootState } from '@/types/common/common';
+import { RootState } from '@/types/common';
 
 export default class TemplateState implements RootState {
   collapsed = false;
