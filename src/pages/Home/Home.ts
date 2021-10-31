@@ -1,4 +1,4 @@
-import Test from '@/components/Counter/Counter.vue';
+import Counter from '@/components/Counter/Counter.vue';
 import { Component, Vue } from 'vue-property-decorator';
 import { TableListColumn, TableListOptions } from '@/types/ui/table';
 import { Action, Getter } from 'vuex-class';
@@ -11,7 +11,7 @@ import { Pagination } from 'ant-design-vue';
 @Component({
   name: 'Home',
   components: {
-    Test
+    Counter
   }
 })
 export default class Home extends Vue {

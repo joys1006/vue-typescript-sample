@@ -1,6 +1,6 @@
 <template>
   <div id="Home">
-    <test @numberEventLisner="numberEventLisner" />
+    <counter @numberEventLisner="numberEventLisner" />
     <a-table
       :loading="tableOption.loading"
       :options="tableOption"
