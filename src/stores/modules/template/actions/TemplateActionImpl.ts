@@ -3,7 +3,7 @@ import HomeActionInterface from '@/stores/modules/home/actions/HomeActionInterfa
 import HomeType from '@/stores/modules/home/types/HomeType';
 import { Commit } from 'vuex';
 import MockListRequest from '@/types/mock/MockListRequest';
-import MockListResponse from '@/types/mock/MockListResponse';
+import MockResponse from '@/types/mock/MockResponse';
 import TemplateActionInterface from '@/stores/modules/template/actions/TemplateActionInterface';
 
 type TemplateActionImpl = Modify<TemplateActionInterface, {}>;

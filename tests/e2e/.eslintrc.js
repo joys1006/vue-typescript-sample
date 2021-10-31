@@ -4,12 +4,7 @@ module.exports = {
     mocha: true,
     'cypress/globals': true
   },
-  extends: [
-    '@vue/standard',
-    'plugin:vue/essential',
-    'prettier',
-    '@vue/typescript/recommended'
-  ],
+  extends: ['@vue/standard', 'plugin:vue/essential', 'prettier', '@vue/typescript/recommended'],
   parserOptions: {
     ecmaVersion: 2020
   },

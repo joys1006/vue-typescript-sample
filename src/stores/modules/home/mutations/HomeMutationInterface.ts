@@ -1,8 +1,8 @@
 import HomeType from '@/stores/modules/home/types/HomeType';
-import MockListResponse from '@/types/mock/MockListResponse';
+import MockResponse from '@/types/mock/MockResponse';
 
 interface HomeMutationInterface {
-  [HomeType.SET_MOCK_LIST](data: MockListResponse[]): void;
+  [HomeType.SET_MOCK_LIST](data: MockResponse[]): void;
 }
 
 export default HomeMutationInterface;

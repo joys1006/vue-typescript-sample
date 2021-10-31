@@ -1,4 +1,4 @@
-export default class MockListResponse {
+export default class MockResponse {
   get updatedAt(): string {
     return this._updatedAt;
   }

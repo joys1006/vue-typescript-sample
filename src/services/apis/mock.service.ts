@@ -1,16 +1,16 @@
-import MockListResponse from '@/types/mock/MockListResponse';
+import MockResponse from '@/types/mock/MockResponse';
 import MockListRequest from '@/types/mock/MockListRequest';
 import moment from 'moment';
 
 class MockService {
-  public getMockList(payload: MockListRequest): Promise<MockListResponse[]> {
+  public getMockList(payload: MockListRequest): Promise<MockResponse[]> {
     return new Promise((resolve, reject) => {
-      const data: MockListResponse[] = [];
+      const data: MockResponse[] = [];
       const startSize = payload.current > 1 ? payload.current * payload.size - 9 : payload.current;
       const length = payload.current * payload.size;
 
       for (let i = startSize; i <= length; i++) {
-        const mock: MockListResponse = new MockListResponse();
+        const mock: MockResponse = new MockResponse();
 
         mock.no = i;
         mock.title = `목 데이터 테스트${i}`;
@@ -21,10 +21,8 @@ class MockService {
 
         data.push(mock);
       }
-      setTimeout(() => {
-        resolve(data);
-        reject(new Error('request is failed'));
-      }, 2000);
+      resolve(data);
+      reject(new Error('request is failed'));
     });
   }
 }

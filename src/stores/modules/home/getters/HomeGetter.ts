@@ -1,10 +1,10 @@
 import HomeGetterImpl from '@/stores/modules/home/getters/HomeGetterImpl';
 import HomeType from '@/stores/modules/home/types/HomeType';
 import HomeState from '@/stores/modules/home/states/HomeState';
-import MockListResponse from '@/types/mock/MockListResponse';
+import MockResponse from '@/types/mock/MockResponse';
 
 class HomeGetter implements HomeGetterImpl {
-  [HomeType.GET_MOCK_LIST] = (state: HomeState): MockListResponse[] => {
+  [HomeType.GET_MOCK_LIST] = (state: HomeState): MockResponse[] => {
     return state.mockList;
   };
 }
