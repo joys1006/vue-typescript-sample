@@ -16,9 +16,9 @@ module.exports = {
     'space-before-function-paren': [
       'error',
       {
-        anonymous: 'never',
-        named: 'never',
-        asyncArrow: 'never'
+        anonymous: 'always',
+        named: 'always',
+        asyncArrow: 'always'
       }
     ],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
