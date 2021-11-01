@@ -1,4 +1,4 @@
-# vue-typescript-sample
+# vue-typescript-sample(Single Page Application)
 
 ## Project setup
 ```
